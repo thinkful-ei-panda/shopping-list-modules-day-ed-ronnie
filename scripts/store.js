@@ -27,7 +27,7 @@ function findAndToggleChecked(id) {
 
 function findAndUpdateName(id, newName) {
   try {
-    item.validateName;
+    item.validateName(newName);
     const result = findById(id);
     if (result === id) {
       this.name = newName;
@@ -39,7 +39,7 @@ function findAndUpdateName(id, newName) {
 
 function findAndDelete(id) {
   const result = items.filter(element => element.id !== id);
-  return result;
+  return this.items = result;
 }
 
 export default {

@@ -17,3 +17,4 @@ let id = store.items[0].id;
 // delete this item from the store
 store.findAndDelete(id);
 shoppingList.render();
+store.findAndUpdateName('apples', 'oranges');
